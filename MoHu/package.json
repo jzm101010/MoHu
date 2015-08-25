@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "express": "~4.13.1",
+    "body-parser": "latest",
     "mongoose": "^4.1.1"
   }
 }
