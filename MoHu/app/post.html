@@ -1,0 +1,26 @@
+<div class="m-content">
+	<div class="content-inner">
+		<div class="content-title">文章列表</div>
+		<div class="content-list">
+			<div class="no-content" ng-hide="posts.length">
+				<p>目前没有文章</p>
+			</div>
+			<div ng-repeat="post in posts" class="content-post">
+				<div class="content-post-main">
+					<div class="source">
+						{{ post.writer }}发布了该文章
+						<span>{{ post.date | date: 'yyyy-MM-dd HH:mm:ss'}}</span>
+					</div>
+					<div class="content">
+						<a href="/#/post/{{ post._id }}">{{ post.title }}</a>
+						<p>{{post.content}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-side">
+		<a href="/#/post/add">发布文章</a>
+	</div>
+</div>

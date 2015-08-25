@@ -1,0 +1,27 @@
+<div class="m-content">
+	<div class="content-inner">
+		<div class="post-title">{{ post.title }}</div>
+		<div class="post-writer">{{ post.writer }}</div>
+		<div class="post-content">
+			<p>{{ post.content }}</p>
+		</div>
+	</div>
+	
+	<div class="m-comments">
+        <table>
+            <tr ng-repeat="comment in post.comments">
+                <td>{{ comment.writer }}</td>
+                <td>{{ comment.comment }}</td>
+            </tr>
+        </table>
+
+        <form ng-submit="form.submit()">
+            <textarea ng-model="form.comment" placeholder="我想说.."></textarea>
+            <button class="btn btn-danger pull-right">发表评论</button>
+        </form>
+    </div>
+
+    <div class="content-side">
+    	<a href="/#/mohu">返回</a>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "name": "MEAN-BLOG",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.13.1",
+    "mongoose": "^4.1.1",
+  }
+}

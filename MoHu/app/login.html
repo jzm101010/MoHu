@@ -1,0 +1,18 @@
+<div class="m-login">
+	<div class="login-wrap">
+		<div class="m-logo"></div>
+		<div class="form-wrap">
+			<div class="form-title">
+				登陆
+				<a href="/#/register">注册账号<span></span></a>
+
+			</div>
+			<form class="form" ng-submit="form.submit()">
+				<input type="text" placeholder="用户名" ng-model="form.username"/>
+				<input type="password" placeholder="密码" ng-model="form.password"/>
+				<div class="form-err" ng-if="err"><span></span>{{err}}</div>
+				<button class="form-btn" type="submit">登陆</button>
+				
+			</form>
+		</div>
+</div>
