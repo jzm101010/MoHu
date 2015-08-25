@@ -7,4 +7,5 @@ MEAN开发留言博客(Mongodb+Express+Angularjs+Node.js)
 1.  确认开启MongoDB<br>
 2.  npm install<br>
 3.  node app.js<br>
-
+<br>
+演示GIF： http://7xiylb.com1.z0.glb.clouddn.com/show.gif
